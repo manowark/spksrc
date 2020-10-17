@@ -3,6 +3,8 @@ SPK_VERS = 3.1.77
 SPK_REV = 7
 SPK_ICON = src/flexget.png
 
+REQUIRED_DSM = 6.2
+
 BUILD_DEPENDS = cross/python3 cross/setuptools cross/pip cross/wheel
 WHEELS = src/requirements.txt
 SPK_DEPENDS = "python3>=3.7.7"
