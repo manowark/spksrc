@@ -28,6 +28,8 @@ POST_STRIP_TARGET = flexget_extra_install
 # Pure Python package, make sure ARCH is not defined
 override ARCH=
 
+UNSUPPORTED_ARCHS = powerpc ppc824x ppc853x ppc854x
+
 include ../../mk/spksrc.spk.mk
 
 .PHONY: flexget_extra_install
