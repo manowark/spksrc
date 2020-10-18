@@ -3,7 +3,7 @@ SPK_VERS = 3.1.77
 SPK_REV = 7
 SPK_ICON = src/flexget.png
 
-REQUIRED_DSM = 6.1
+REQUIRED_DSM = 6.0
 
 BUILD_DEPENDS = cross/python3 cross/setuptools cross/pip cross/wheel
 WHEELS = src/requirements.txt
@@ -29,8 +29,6 @@ POST_STRIP_TARGET = flexget_extra_install
 
 # Pure Python package, make sure ARCH is not defined
 override ARCH=
-
-UNSUPPORTED_ARCHS = powerpc ppc824x ppc853x ppc854x
 
 include ../../mk/spksrc.spk.mk
 
