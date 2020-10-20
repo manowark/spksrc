@@ -4,7 +4,7 @@ PATH="${SYNOPKG_PKGDEST}/env/bin:${SYNOPKG_PKGDEST}/bin:${PYTHON_DIR}/bin:${PATH
 
 CONFIG_FILE="${SYNOPKG_PKGDEST}/var/config.yml"
 
-SERVICE_COMMAND="${SYNOPKG_PKGDEST}/env/bin/${SPK_NAME} -c ${CONFIG_FILE} --logfile ${LOG_FILE} daemon start"
+SERVICE_COMMAND="${SYNOPKG_PKGDEST}/env/bin/flexget -c ${CONFIG_FILE} --logfile ${LOG_FILE} daemon start"
 SVC_BACKGROUND=y
 SVC_WRITE_PID=y
 SVC_CWD="${SYNOPKG_PKGDEST}/var/"
