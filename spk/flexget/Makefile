@@ -29,7 +29,7 @@ SERVICE_PORT_TITLE = $(DISPLAY_NAME)
 # Admin link for in DSM UI
 ADMIN_PORT = $(SERVICE_PORT)
 
-UNSUPPORTED_ARCHS = $(PPC_ARCHES)
+#UNSUPPORTED_ARCHS = powerpc ppc824x ppc853x ppc854x
 
 include ../../mk/spksrc.spk.mk
 
