@@ -21,4 +21,5 @@ service_postinst ()
     # Copying "config.yml" file to the "var/" folder
     install -m 755 -d ${SYNOPKG_PKGDEST}/var
     install -m 644 ${SYNOPKG_PKGDEST}/share/config.yml ${SYNOPKG_PKGDEST}/var
+    ${SYNOPKG_PKGDEST}/env/bin/flexget -c ${SYNOPKG_PKGDEST}/var/config.yml web passwd flexget1flexget
 }
